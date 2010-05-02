@@ -7,8 +7,8 @@
     = javascript_include_tag 'jquery-1.4.2.min', 'jquery.corners.min','application'
   %body
     .wrap
-      =render :partial => "shared/toplists"
-      =render :partial => "shared/header"
+      =#render :partial => "shared/toplists"
+      =#render :partial => "shared/header"
       %p{ :style => "color: green" }
         = flash[:notice]
       = yield
