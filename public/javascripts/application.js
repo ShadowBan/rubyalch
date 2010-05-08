@@ -131,6 +131,4 @@ $(document).ready(function() {
 
   ajaxLinks();
   
-  $('#header').corners();
-  
 });
