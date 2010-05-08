@@ -26,22 +26,15 @@ body{
 
 @font-face { 
   font-family: handwriting; 
-  src: url(/fonts/Jellyka_Estrya_Handwriting.ttf); 
+  src: url(/fonts/Handwriting.eot);  /* IE */  
+  src: local("Jelly"), url( /fonts/Jellyka_Estrya_Handwriting.ttf ) format("truetype"); /* non-IE */ 
 }
 
 @font-face { 
   font-family: abury; 
-  src: url(/fonts/AUBREY1__.ttf); 
+  src: url(/fonts/AUBREY.eot);  /* IE */ 
+  src: local("Aburey"), url( /fonts/AUBREY1__.ttf ) format("truetype"); /* non-IE */  
 }
-@font-face { 
-  font-family: exit; 
-  src: url(/fonts/Existence-Light.ttf); 
-}
-@font-face { 
-  font-family: stab; 
-  src: url(/fonts/Staubiges Vergnügen.ttf); 
-}
-
 
 #title{
 	font-family: handwriting;
