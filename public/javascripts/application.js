@@ -131,7 +131,6 @@ $(document).ready(function() {
 
   ajaxLinks();
   
-  $('#somediv').corners();
-  $('#somediv').click(function(){alert("Jquery is working!");});
+  $('#header').corners();
   
 });
