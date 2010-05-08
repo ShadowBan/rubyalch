@@ -10,13 +10,16 @@
 }
 
 body{
+  background: #000000 url(/images/bg_rd_blk.jpg) repeat left top;
+  /*
   margin: 0;
 	padding: 0;
 	height: auto;
-	background: #000000 url(/images/bg_rd_blk.jpg) repeat left top;
+	
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 12px;
 	color: #4D4D4D;
+	*/
 }
 
 #header{
@@ -43,7 +46,7 @@ body{
 
 
 #title{
-	font-family: Arial;
+	font-family: handwriting;
 	font-style: italic;
 	font-variant: normal;
 	font-size: ;
@@ -59,7 +62,7 @@ body{
 }
 
 #sub-title{
-  font-family: Arial;
+  font-family: abury;
 	font-style: italic;
 	font-variant: normal;
 	font-weight: bold;
