@@ -130,6 +130,5 @@ $(document).ready(function() {
      });
 
   ajaxLinks();
-  $('#title, #sub-title').ieffembedfix()
   
 });
