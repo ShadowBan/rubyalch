@@ -9,6 +9,18 @@
   background:#FFFFCC;
 }
 
+.left{
+  float:left;
+}
+
+.right{
+  float:right;
+}
+
+.clear{
+  clear:both;
+}
+
 body{
   background: #000000 url(/images/bg_rd_blk_m.jpg) repeat left top;
   margin: 0;
@@ -21,51 +33,33 @@ body{
 }
 
 #header{
-  margin-left:25%;
+  width: 720px;
+  margin: auto;
+  margin-bottom:35px;
 }
 
-@font-face { 
-  font-family: handwriting; 
-  src: url(/fonts/Handwriting.eot);  /* IE */  
-  src: local("Jelly"), url( /fonts/Jellyka_Estrya_Handwriting.ttf ) format("truetype"); /* non-IE */ 
+#top{
+  width:986px;
+  min-height:250px;
+  background:#0000FF;
+  margin:auto;
+  margin-bottom:25px;
+}
+#bottom{
+  width:986px;
+  min-height:1000px;
+  background:#0000FF;
+  margin:auto;
 }
 
-@font-face { 
-  font-family: abury; 
-  src: url(/fonts/AUBREY.eot);  /* IE */ 
-  src: local("Aburey"), url( /fonts/AUBREY1__.ttf ) format("truetype"); /* non-IE */  
+#bio{
+  background:#FFFFFF;
+  width:250px;
+  min-height:100%;
 }
 
-#title{
-	font-family: handwriting;
-	font-style: italic;
-	font-variant: normal;
-	font-size: ;
-	line-height: 100%;
-	word-spacing: normal;
-	letter-spacing: normal;
-	text-decoration: none;
-	text-transform: none;
-	text-align: left;
-	text-indent: 0ex;
-	color:#FFFFFF;
-	font-size:202px;
+#contact{
+  background:#FFFFFF;
+  width:250px;
+  min-height:100%;
 }
-
-#sub-title{
-  font-family: abury;
-	font-style: italic;
-	font-variant: normal;
-	font-weight: bold;
-	font-size: ;
-	line-height: 100%;
-	word-spacing: normal;
-	letter-spacing: normal;
-	text-decoration: none;
-	text-transform: none;
-	text-align: left;
-	text-indent: 0ex;
-	color:#FFFFFF;
-	font-size:27px;
-}
-
