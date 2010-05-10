@@ -40,26 +40,44 @@ body{
 
 #top{
   width:986px;
-  min-height:250px;
-  background:#0000FF;
   margin:auto;
   margin-bottom:25px;
 }
 #bottom{
   width:986px;
-  min-height:1000px;
-  background:#0000FF;
   margin:auto;
+  margin-bottom:100px;
 }
 
 #bio{
   background:#FFFFFF;
-  width:250px;
-  min-height:100%;
+  width:660px;
+}
+#bio p{
+  min-height:150px;
+  padding-left:10px;
+  padding-right:10px;
 }
 
 #contact{
   background:#FFFFFF;
-  width:250px;
-  min-height:100%;
+  width: 300px;
+}
+
+#info{
+  min-height:150px;
+  padding-left:10px;
+  padding-right:10px;
+}
+
+#bottom-left, #bottom-right{
+  background: #FFFFFF;
+  width: 475px;
+}
+#twitter{
+  min-height: 300px;
+}
+
+#projects{
+  min-height: 300px;
 }
