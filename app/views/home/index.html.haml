@@ -12,6 +12,9 @@
 #bottom
   #bottom-left.left.corners
     #twitter
+      %a{:href=>@twitter.link}=@twitter.title
+      -@twitter.items.each do |tweet|
+        %p=tweet.description
   #bottom-right.right.corners
     #projects
   .clear
