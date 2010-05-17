@@ -49,12 +49,12 @@ body{
   margin-bottom:100px;
 }
 
-#bio{
+#top-left{
   background:#FFFFFF;
   width:660px;
 }
-#bio p{
-  min-height:150px;
+#bio{
+  min-height:175px;
   padding-left:10px;
   padding-right:10px;
 }
@@ -65,7 +65,7 @@ body{
 }
 
 #info{
-  min-height:150px;
+  min-height:175px;
   padding-left:10px;
   padding-right:10px;
 }
@@ -76,8 +76,17 @@ body{
 }
 #twitter{
   min-height: 300px;
+  padding-left:20px;
+  padding-right:20px
 }
 
 #projects{
   min-height: 300px;
+}
+
+.rss-item{
+  background: #D0D0D0;
+  margin-bottom: 10px;
+  padding-left:10px;
+  padding-right:10px;
 }

@@ -1,20 +1,29 @@
 #top
-  #bio.left.corners
-    %p="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+  #top-left.left.corners
+    #bio
+      =""
   #contact.right.corners
     #info
-      %p="E-mail: Chris.Kincanon@gmail.com"
-      %p="Phone: 925-588-9548"
-      %p="Twitter: @RubyAlchemist"
-      %p="Skype: Chris.Kincanon"
-      %p="Facebook: /Chris.Kincanon"
+      ="E-mail: Chris.Kincanon@gmail.com"
+      %br
+      ="Phone: 925-588-9548"
+      %br
+      ="Twitter: @RubyAlchemist"
+      %br
+      ="Skype: Chris.Kincanon"
+      %br
+      =#
   .clear
 #bottom
-  #bottom-left.left.corners
+  #bottom-left.left.corners  
     #twitter
-      %a{:href=>@twitter.link}=@twitter.title
-      -@twitter.items.each do |tweet|
-        %p=tweet.description
+      -if @twitter.status
+        %a{:href=>@twitter.link}=@twitter.title
+        -@twitter.items.each do |tweet|
+          .rss-item.corners
+            =tweet.description
+      -else
+        ="Twitter Feed is Temporaroly Down"
   #bottom-right.right.corners
     #projects
   .clear
