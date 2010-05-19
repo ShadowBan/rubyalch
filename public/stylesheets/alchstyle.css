@@ -22,7 +22,7 @@
 }
 
 body{
-  background: #000000 url(/images/bg_rd_blk_m.jpg) no-repeat left top;
+  background: #000000 url(/images/bg_rd_blk_m.jpg) repeat-x left top;
   margin: 0;
 	padding: 0;
 	height: 0;
@@ -42,6 +42,7 @@ body{
   width:986px;
   margin:auto;
   margin-bottom:25px;
+  font-size:15px;
 }
 #bottom{
   width:986px;
