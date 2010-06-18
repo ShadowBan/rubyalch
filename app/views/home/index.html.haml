@@ -1,0 +1,31 @@
+#top
+  #top-left.left.corners
+    #bio
+      %p="Welcome to Ruby Alchemist, the collection and works of Chris Kincanon. I am a leader and technologist. I have been on the fore-front of multiple start-ups. I received my Bachelor of Science in Computer Science from California State University, Chico. I am currently working as the Development Lead for SR. Education Group."
+      %p="My technological interests include Rails, Ruby, Javascript, HTML, CSS and anything web 2.0 or mobile related. My personal passions include Golf, Videogames, Good Beer, and Sci-fi. Please enjoy my site and feel free to contact me with any further questions or information."
+  #contact.right.corners
+    #info
+      %p="E-mail: #{mail_to 'Chris.Kincanon@gmail.com'}"
+      %p="Phone: (425)298-3411"
+      %p="Skype: Chris.Kincanon"
+      %p="Twitter: #{link_to '@RubyAlchemist','http://twitter.com/rubyalchemist'}"
+      %p="LinkedIn: #{link_to '/in/chriskincanon','http://www.linkedin.com/in/chriskincanon'}"
+  .clear
+#bottom
+  #bottom-left.left.corners  
+    #twitter
+      -if @twitter.status
+        %a{:href=>@twitter.link}
+          %img{:src=>"/images/beeker.png",:style=>"float:left;height:60px;width:55px;"}
+          #tweettitle{:style=>"font-size:60px"}="Tweets"
+          .clear
+        -@twitter.items.each do |tweet|
+          .rss-item.corners
+            =tweet.description
+      -else
+        ="Twitter Feed is Temporaroly Down"
+  #bottom-right.right.corners
+    #projects
+      %p="Projects"
+  .clear
+

@@ -1,0 +1,92 @@
+.wrap-centered {
+  border: 3px solid #d6d6d6;
+  border-top: none;
+  border-bottom: none;
+  width: 986px;
+  margin: 0 auto;
+  margin-bottom:35px;
+  min-height:3000px;
+  background:#FFFFCC;
+}
+
+.left{
+  float:left;
+}
+
+.right{
+  float:right;
+}
+
+.clear{
+  clear:both;
+}
+
+body{
+  background: #000000 url(/images/bg_rd_blk_m.jpg) repeat-x left top;
+  margin: 0;
+	padding: 0;
+	height: 0;
+	border: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #4D4D4D;
+}
+
+#header{
+  width: 500px;
+  margin: auto;
+}
+
+#top{
+  width:986px;
+  margin:auto;
+  margin-bottom:25px;
+  font-size:15px;
+}
+#bottom{
+  width:986px;
+  margin:auto;
+  margin-bottom:100px;
+}
+
+#top-left{
+  background:#FFFFFF;
+  width:660px;
+}
+#bio{
+  min-height:175px;
+  padding-left:10px;
+  padding-right:10px;
+}
+
+#contact{
+  background:#FFFFFF;
+  width: 300px;
+}
+
+#info{
+  min-height:175px;
+  padding-left:10px;
+  padding-right:10px;
+}
+
+#bottom-left, #bottom-right{
+  background: #FFFFFF;
+  width: 475px;
+}
+#twitter{
+  min-height: 300px;
+  padding-left:20px;
+  padding-right:20px
+}
+
+#projects{
+  min-height: 300px;
+}
+
+.rss-item{
+  background: #D0D0D0;
+  margin-bottom: 10px;
+  padding-left:10px;
+  padding-right:10px;
+}
