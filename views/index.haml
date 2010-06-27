@@ -5,11 +5,17 @@
       %p="My technological interests include Rails, Ruby, Javascript, HTML, CSS and anything web 2.0 or mobile related. My personal passions include Golf, Videogames, Good Beer, and Sci-fi. Please enjoy my site and feel free to contact me with any further questions or information."
   #contact.right.corners
     #info
-      %p="E-mail: #{mail_to 'Chris.Kincanon@gmail.com'}"
+      %p
+        ="E-mail:"
+        %a{:href=>"mailto:Chris.Kincanon@gmail.com"}="Chris.Kincanon@gmail.com"
       %p="Phone: (425)298-3411"
       %p="Skype: Chris.Kincanon"
-      %p="Twitter: #{link_to '@RubyAlchemist','http://twitter.com/rubyalchemist'}"
-      %p="LinkedIn: #{link_to '/in/chriskincanon','http://www.linkedin.com/in/chriskincanon'}"
+      %p 
+        ="Twitter:"
+        %a{:href=>"http://twitter.com/rubyalchemist"}="@RubyAlchemist"
+      %p
+        ="LinkedIn:"
+        %a{:href=>"http://www.linkedin.com/in/chriskincanon"}="/in/chriskincanon"
   .clear
 #bottom
   #bottom-left.left.corners  
