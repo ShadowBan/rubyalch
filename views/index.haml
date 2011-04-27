@@ -1,38 +1,195 @@
-#top
-  #top-left.left.corners
-    #bio
-      %p="Welcome to Ruby Alchemist, the collection and works of Chris Kincanon. I am a leader and technologist. I have been on the fore-front of multiple start-ups. I received my Bachelor of Science in Computer Science from California State University, Chico. I am currently working as the Development Lead for SR. Education Group."
-      %p="My technological interests include Rails, Ruby, Javascript, HTML, CSS and anything web 2.0 or mobile related. My personal passions include Golf, Videogames, Good Beer, and Sci-fi. Please enjoy my site and feel free to contact me with any further questions or information."
-  #contact.right.corners
-    #info
-      %p
-        ="E-mail:"
-        %a{:href=>"mailto:Chris.Kincanon@gmail.com"}="Chris.Kincanon@gmail.com"
-      %p="Phone: (425)298-3411"
-      %p="Skype: Chris.Kincanon"
-      %p 
-        ="Twitter:"
-        %a{:href=>"http://twitter.com/rubyalchemist"}="@RubyAlchemist"
-      %p
-        ="LinkedIn:"
-        %a{:href=>"http://www.linkedin.com/in/chriskincanon"}="/in/chriskincanon"
-  .clear
-#bottom
-  #bottom-left.left.corners  
-    #twitter
-      -if @twitter.status
-        %a{:href=>@twitter.link}
-          -#%img{:src=>"/images/beeker.png",:style=>"float:left;height:60px;width:55px;"}
-          #tweettitle{:style=>"font-size:60px"}="Tweets"
-          .clear
-        -unless @twitter.items.nil?
-          -@twitter.items.each do |tweet|
-            .rss-item.corners
-              =tweet.description
-      -else
-        ="Twitter Feed is Temporaroly Down"
-  #bottom-right.right.corners
-    #projects
-      %p=#"Projects"
-  .clear
+#header
+  .head
+    %ul#navigation
+      %li.page_item.current_page_item
+        %a{:href => "index.html", :title => "Home Page"} Home
+      %li.page_item
+        %a{:href => "about.html", :title => "About"} About
+        %ul
+          %li.page_item
+            %a{:href => "post.html", :title => "Page 1"} Page 1
+            %ul
+              %li.page_item
+                %a{:href => "post.html", :title => "Page 3"} Page 3
+          %li.page_item
+            %a{:href => "post.html", :title => "Page 2"} Page 2
+      %li.page_item
+        %a{:href => "portfolio.html", :title => "Portfolio"} Portfolio
+      %li.page_item
+        %a{:href => "blog.html", :title => "Blog"} Blog
+      %li.page_item
+        %a{:href => "contacts.html", :title => "Contacts"} Contacts
+    .head_r
+      .rss
+        %a{:href => "#"} 1
+      .twit
+        %a{:href => "#"} 17
+    %div{:style=>"clear:both;"}
+    %a.logo{:href => "index.html", :title => "Tesigner 2.0"}
+      %img{:alt => "Ruby Alchemist", :src => "images/logo_shrink.png"}/
 
+.container
+  #top
+    .gallery_box
+      .tl
+      .tr
+      .bl
+      .br
+      #slider.nivoSlider
+        %a.nivo-imageLink{:href => "post.html"}
+          %img{:alt => "", :height => "464", :src => "images/gall_img_4.png", :title => "Meet my dragon", :width => "464"}/
+        %a.nivo-imageLink{:href => "post.html"}
+          %img{:alt => "", :height => "464", :src => "images/gall_img_2.png", :title => "Clash of the Titans", :width => "464"}/
+        %a.nivo-imageLink{:href => "post.html"}
+          %img{:alt => "", :height => "464", :src => "images/gall_img_1.png", :title => "Redhead witch", :width => "464"}/
+        %a.nivo-imageLink{:href => "post.html"}
+          %img{:alt => "", :height => "464", :src => "images/gall_img_3.png", :title => "American kick-ass", :width => "464"}/
+        %a.nivo-imageLink{:href => "post.html"}
+          %img{:alt => "", :height => "464", :src => "images/slide_3.png", :title => "Monica", :width => "464"}/
+        %a.nivo-imageLink{:href => "post.html"}
+          %img{:alt => "", :height => "464", :src => "images/cmsmasters1.jpg", :title => "cmsmasters", :width => "464"}/
+        %a.nivo-imageLink{:href => "post.html"}
+          %img{:alt => "", :height => "464", :src => "images/slide_4.png", :title => "Knight &amp; Day", :width => "464"}/
+    %ul
+      %li.widget.widget_text
+        .textwidget
+          %h1
+            %span Welcome!
+          %h1
+            %a{:href => "portfolio.html"}
+              Some Text Telling you a bit about me
+          %p
+            A little bit more about me and what you will find on the site
+          %a.view{:href => "portfolio.html"} View Portfolio
+  #middle
+    #middle_t
+    .middle
+      .box
+        .widget.widget_text
+          %h3.widgettitle About Us
+          .textwidget
+            %img{:alt => "", :src => "images/headphones.png"}/
+            %br/
+            %p You can easily edit this area from admin panel. Apperiance - Widgets - Sidebar 2 - About. Click to read more and see styles.
+            %p
+              %a{:href => "about.html"} Read more...
+        #twitter-widget.widget.cmsmasters_twitter_widget
+          #twitter
+            %h3.widgettitle Twitter
+            %ul
+              %li
+                Horray! Tesigner2 is out!
+                %a{:href => "#"}
+                  %small 4 days ago
+              %li
+                just applied tesigner2 to review. come soon!
+                %a{:href => "#"}
+                  %small 6 days ago
+              %li
+                tesigner2 one of the styles demo page!
+                %a{:href => "http://tesigner2.cmsmasters.net/"} http://tesigner2.cmsmasters.net/
+                still working on...
+                %a{:href => "#"}
+                  %small 1 week ago
+        #recent-widget.widget.cmsmasters_recent_posts_widget
+          %h3.widgettitle Recent Posts
+          %ul.thumbnail_list
+            %li
+              %h3
+                %a{:href => "post.html", :title => "Robin Hood"} Robin Hood
+              %p
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum  tincidunt, enim non congue egestas,...
+                %br/
+                %a{:href => "post.html"} Read more...
+            %li
+              %h3
+                %a{:href => "post.html", :title => "Salt"} Salt
+              %p
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt, enim non congue egestas,...
+                %br/
+                %a{:href => "post.html"} Read more...
+    #middle_b
+  #bottom
+    .box
+      #flickr-widget.widget.cmsmasters_flickr_widget
+        #flickr
+          %h3 Flickr
+          .wrap
+      #comments-widget.widget.cmsmasters_recent_comments
+        %h3.widgettitle Recent Comments
+        .thumbnail_list
+          %p
+            admin on
+            %a{:href => "post.html"} Robin Hood
+            %br/
+            %small (August 5, 2010 10:18 PM)
+            %br/
+            %span.col Looking for company at a Robin Hood press screening, I invited a friend...
+          %p
+            fan on
+            %a{:href => "post.html"} cmsmasters
+            %br/
+            %small (August 5, 2010 10:11 PM)
+            %br/
+            %span.col I like this guys!
+          %p
+            cmsmasters on
+            %a{:href => "post.html"} Salt
+            %br/
+            %small (August 3, 2010 1:21 PM)
+            %br/
+            %span.col Salt may be the first truly successful launch of a female secret agent...
+      .widget.widget_categories
+        %h3.widgettitle Categories
+        %ul
+          %li
+            %a{:href => "#", :title => "View all posts filed under Portfolio"} Portfolio
+          %li
+            %a{:href => "#", :title => "View all posts filed under Portfolio 2"} Portfolio 2
+          %li
+            %a{:href => "#", :title => "View all posts filed under Slider"} Slider
+          %li
+            %a{:href => "#", :title => "View all posts filed under Uncategorized"} Uncategorized
+      .widget.widget_links
+        %h3.widgettitle Links
+        %ul.blogroll
+          %li
+            %a{:href => "http://codex.wordpress.org/"} Documentation
+          %li
+            %a{:href => "http://wordpress.org/extend/plugins/"} Plugins
+          %li
+            %a{:href => "http://wordpress.org/extend/ideas/"} Suggest Ideas
+          %li
+            %a{:href => "http://wordpress.org/support/"} Support Forum
+          %li
+            %a{:href => "http://wordpress.org/extend/themes/"} Themes
+          %li
+            %a{:href => "http://wordpress.org/development/"} WordPress Blog
+          %li
+            %a{:href => "http://planet.wordpress.org/"} WordPress Planet
+  %script{:src => "javascripts/jquery.pretty_photo.js", :type => "text/javascript"}
+  %script{:src => "javascripts/pretty_script.js", :type => "text/javascript"}
+#footer
+  %div
+    %ul.menu_bot
+      %li
+        %a{:href => "index.html", :title => "Home Page"} Home
+      %li
+        %a{:href => "about.html", :title => "About"} About
+      %li
+        %a{:href => "portfolio.html", :title => "Portfolio"} Portfolio
+      %li
+        %a{:href => "blog.html", :title => "Blog"} Blog
+      %li
+        %a{:href => "contacts.html", :title => "Contacts"} Contacts
+/
+  Welcome to Ruby Alchemist, the collection and works of Chris Kincanon. I am a leader and technologist. I have been on the fore-front of multiple start-ups. I received my Bachelor of Science in Computer Science from California State University, Chico. I am currently working as the Development Lead for SR. Education Group.  My technological interests include Rails, Ruby, Javascript, HTML, CSS and anything web 2.0 or mobile related. My personal passions include Golf, Videogames, Good Beer, and Sci-fi. Please enjoy my site and feel free to contact me with any further questions or information.
+  E-mail: Chris.Kincanon@gmail.com
+
+  Phone: (425)298-3411
+
+  Skype: Chris.Kincanon
+
+  Twitter: @RubyAlchemist
+
+  LinkedIn: /in/chriskincanon

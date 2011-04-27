@@ -1,0 +1,12 @@
+/* IE */
+
+#header a.logo {z-index:10;}
+
+#header #navigation ul {z-index:100;}
+
+#header .twit a, #header .rss a {line-height:2em;}
+
+#middle2 .portfolio-website .website-thumbnail a span {
+	top:-1px;
+	left:-1px;
+}

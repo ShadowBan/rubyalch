@@ -1,17 +1,38 @@
-%html{ "xml:lang" => "en", :lang => "en", :xmlns => "http://www.w3.org/1999/xhtml" }
-  %head  
-    %meta{ :content => "text/html;charset=UTF-8", "http-equiv" => "content-type" }
-    %link{:rel=>"shortcut icon", :href=>"/images/favicon.ico", :type=>"image/x-icon"}
-    %title
-      Ruby Alchemist ~ Chris Kincanon.
-    %link{:href=>"/stylesheets/alchstyle.css", :media=>"screen", :rel=>"stylesheet", :type=>"text/css"}
-    %script{:src=>"/javascripts/jquery-1.4.2.min.js", :type=>"text/javascript"}
-    %script{:src=>"/javascripts/jquery.corners.min.js", :type=>"text/javascript"}
-    %script{:src=>"/javascripts/application.js", :type=>"text/javascript"}
+!!!
+%html{:dir => "ltr", :lang => "en-US", :xmlns => "http://www.w3.org/1999/xhtml"}
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Tesigner 2.0
+    %link{:href => "stylesheets/style.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "stylesheets/wood.css", :rel => "stylesheet", :title => "main", :type => "text/css"}/
+    %link{:href => "stylesheets/styles/pretty_photo.css", :rel => "stylesheet", :type => "text/css"}/
+    %script{:src => "javascripts/jquery-1.4.2.js", :type => "text/javascript"}
+    %link{:href => "stylesheets/styles/nivo-slider.css", :rel => "stylesheet", :type => "text/css"}/
+    %script{:src => "javascripts/jquery.nivo.slider.js", :type => "text/javascript"}
+    :javascript
+      $(window).load(function(){
+        setTimeout(function(){
+          $('#slider').nivoSlider({
+            manualAdvance:false,
+            effect:'random',
+            animSpeed:500,
+            pauseTime:5000,
+            pauseOnHover:false
+          });
+        }, 1000);
+      });
+    %script{:src => "javascripts/jquery.corner.js", :type => "text/javascript"}
+    %script{:src => "javascripts/corner.js", :type => "text/javascript"}
+    %script{:src => "javascripts/cufon-yui.js", :type => "text/javascript"}
+    %script{:src => "javascripts/Advent_400.font.js", :type => "text/javascript"}
+    /[if IE]
+      <link rel="stylesheet" href="stylesheets/styles/ie.css" type="text/css" />
+    /[if lt IE 7]
+      <script src="javascripts/DD_belatedPNG.js" type="text/javascript"></script>
+      <script type="text/javascript">
+      DD_belatedPNG.fix('div, img, a, li');
+      </script>
+    %script{:src => "javascripts/script.js", :type => "text/javascript"}
   %body
-    %script{:type=>"text/javascript"}
-      var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-16448215-1']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();
-    .wrap
-      =partial(:'shared/toplists')
-      =partial(:'shared/header')
+    #page
       =yield

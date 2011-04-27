@@ -1,0 +1,328 @@
+body {
+	background:url(wood/bg.jpg) top center fixed no-repeat;
+	color:#8e8879;
+}
+
+a {color:#fff;}
+
+label {color:#1f0b03;}
+
+input, textarea {
+	border:1px solid #6d6d6d;
+	background:#fffeff;
+	color:#feffff;
+}
+
+#middle label small {color:#a2a2a2;}
+
+#middle input {background:url(wood/input_bg.png) top left no-repeat;}
+
+#sidebar input, #contact-form-widget input {background:url(wood/input_bg_short.png) top left no-repeat;}
+
+#middle input#submit, #middle input#clear:hover, #middle input[type="submit"], #middle input[type="reset"]:hover, 
+#middle #sidebar input#submit, #middle #sidebar input#clear:hover, #middle #sidebar input[type="submit"], #middle #sidebar input[type="reset"]:hover {
+	color:#010000;
+	background:url(wood/submit.png) top left no-repeat;
+}
+
+#middle input#clear, #middle input#submit:hover, #middle input[type="reset"], #middle input[type="submit"]:hover, 
+#middle #sidebar input#clear, #middle #sidebar input#submit:hover, #middle #sidebar input[type="reset"], #middle #sidebar input[type="submit"]:hover {
+	color:#fffefe;
+	background:url(wood/clear.png) top left no-repeat;
+}
+
+#middle textarea {background:url(wood/textarea_bg.png) top left no-repeat;}
+
+#contact-form-widget textarea {background:url(wood/textarea_bg_short.png) top left no-repeat;}
+
+h1 {color:#feffff;}
+
+h1 span {color:#ff9c00;}
+
+h2, h3 {color:#fffeff;}
+
+h4 {color:#fffeff;}
+
+h5 {color:#fffeff;}
+
+#page {background:url(wood/gradient.png) bottom repeat-x;}
+
+/* ---------------------------------- Header ----------------------------------------------*/
+
+#header {
+	background:url(wood/header_bg.png) top repeat-x;
+	color:#fffffe;
+}
+
+ul#navigation {background:url(wood/nav_bg.jpg) top repeat-x;}
+
+#navigation li {background:url(wood/nav_sep.png) right 20px no-repeat;}
+
+#navigation li a {color:#8a8986;}
+
+#navigation li.multi a {background:url(wood/nav_down.png) right 27px no-repeat;}
+
+#navigation li li.multi a {background:url(wood/nav_r.png) 130px 12px no-repeat;}
+
+#navigation li li.multi:hover a {background:#ff9c00 url(wood/nav_r.png) 130px 12px no-repeat;}
+
+#navigation li li.multi:hover li a {background:#ff9c00;}
+
+#navigation li li.multi li a {background:#090806;}
+
+#navigation li:hover li a {color:#fffefe;}
+
+#navigation li:hover li:hover li a {background:#090806;}
+
+#navigation li:hover li:hover li:hover a {background:#ff9c00;}
+
+#navigation li li a:hover {background:#ff9c00;}
+
+#navigation li ul {background:#090806;}
+
+#navigation ul li {background:#090806;}
+
+#navigation li:hover ul li ul {background:#090806;}
+
+#navigation ul ul li {background:#090806;}
+
+#navigation li:hover a, #navigation li.current_page_item a {color:#ff9c00;}
+
+#header .head_r a {
+	background:url(wood/nav_white.png) right no-repeat;
+	color:#ff9c00;
+}
+
+#header .head_r ul#searchbox {background:url(wood/search_bg.png) top right no-repeat;}
+
+#header .head_r ul#searchbox input {color:#fefefe;}
+
+#header a.logo h1 {color:#ff9c00;}
+
+#header .twit a, #header .rss a {color:#9e948b;}
+
+#header .twit a:hover, #header .rss a:hover {color:#fefffe;}
+
+#header .rss a, #header .rss a:hover {background:url(wood/rss_sel.png) top left no-repeat;}
+
+#header .twit a, #header .twit a:hover {background:url(wood/twit_sel.png) top left no-repeat;}
+
+/* ---------------------------------- Top ----------------------------------------------*/
+
+#top .gallery_box {background:url(wood/border.png) top left no-repeat;}
+
+#top .gallery_box .tl {background:url(wood/tl.png) 0 0 no-repeat;}
+
+#top .gallery_box .tr {background:url(wood/tr.png) 0 0 no-repeat;}
+
+#top .gallery_box .bl {background:url(wood/bl.png) 0 0 no-repeat;}
+
+#top .gallery_box .br {background:url(wood/br.png) 0 0 no-repeat;}
+
+#top .nivoSlider {background:url(wood/loader.gif) 49% 49% no-repeat;}
+
+a.nivo-nextNav {background:url(wood/next.png) no-repeat;}
+
+a.nivo-prevNav {background:url(wood/prev.png) no-repeat;}
+
+a.nivo-nextNav:hover {background:url(wood/next_sel.png) no-repeat;}
+
+a.nivo-prevNav:hover {background:url(wood/prev_sel.png) no-repeat;}
+
+.nivo-controlNav a {background:url(wood/circle.png) no-repeat;}
+
+.nivo-controlNav a.active {background:url(wood/circle_sel.png) no-repeat;}
+
+.nivo-c {background:url(wood/slider_nav_bg.png) top repeat-x;}
+
+.nivo-r {background:url(wood/slider_nav_r.png) top right no-repeat;}
+
+.nivo-l {background:url(wood/slider_nav_l.png) top left no-repeat;}
+
+#top a.view {
+	background:url(wood/view.png) top left no-repeat;
+	color:#19150d;
+}
+
+#top a.view:hover {
+	background:url(wood/view_sel.png) top left no-repeat;
+	color:#fefffe;
+}
+
+/* ---------------------------------- Middle ----------------------------------------------*/
+
+#middle_t {background:url(wood/middle_t.png) bottom center no-repeat;}
+
+#middle_b {background:url(wood/middle_b.png) top center no-repeat;}
+
+.middle {background:url(wood/middle_bg.png) center repeat-y;}
+
+#middle2 .portfolio-website:hover .portfolio-website_top {background:url(wood/portfolio_item_top.png) top left no-repeat;}
+
+#middle2 .portfolio-website:hover .portfolio-website_bot {background:url(wood/portfolio_item_bot.png) top left no-repeat;}
+
+#middle2 .portfolio-website:hover .portfolio-website_bg {background:url(wood/portfolio_item_bg.png) left repeat-y;}
+
+#middle2 .portfolio-website .website-thumbnail a span.image {background:url(wood/item_img.png) center no-repeat;}
+
+#middle2 .portfolio-website .website-thumbnail a span.video {background:url(wood/item_video.png) center no-repeat;}
+
+#middle h2, #middle h3 {color:#ff9c00;}
+
+#middle div.box .widget {background:url(wood/middle_sep.png) right repeat-y;}
+
+#middle .box #twitter li {background:url(wood/line.png) bottom repeat-x;}
+
+#middle .box.blog h2 a:hover, #middle #recent-widget h3 a:hover {color:#f7a017;}
+
+#middle .box.me a:hover, #middle .box #twitter a:hover, #middle .box.blog a:hover, #middle #recent-widget a:hover {color:#f7a017;}
+
+#middle #recent-widget p {background:url(wood/line.png) bottom repeat-x;}
+
+/* ---------------------------------- Bottom ----------------------------------------------*/
+
+#bottom div.box .widget a {color:#f7a017;}
+
+#bottom div.box .widget a:hover, #bottom div.box .widget p span.col {color:#fefffe;}
+
+/* ---------------------------------- Content ----------------------------------------------*/
+
+#content {background:url(wood/middle_sep.png) right repeat-y;}
+
+#content h3 a {color:#f7a017;}
+
+#content .hentry {background:url(wood/middle_h_sep.png) bottom repeat-x;}
+
+#content .navigation div {color:#fefffe;}
+
+#content .navigation a {color:#f7a017;}
+
+#content small {color:#807162;}
+
+#content small span {
+	background:url(wood/post_sep.png) right no-repeat;
+	color:#807162;
+}
+
+#content small span.col a {color:#807162;}
+
+#content ol.commentlist {background:url(wood/middle_h_sep.png) top repeat-x;}
+
+#content ol.commentlist li {border-bottom:1px solid #312517;}
+
+#content ol.commentlist li ul.children li {border-top:1px solid #312517;}
+
+#content ol.commentlist li li:last-child {border:0;}
+
+#content ol.commentlist li li:last-child {border-top:1px solid #312517;}
+
+#content ol.commentlist li .comment-author cite.fn {
+	color:#fefeff;
+	background:url(wood/avatar_bg.png) 0 20px no-repeat;
+}
+
+#content ol.commentlist li .commentmetadata a {color:#4c443c;}
+
+#content ol.commentlist li .reply a {color:#ff9c00;}
+
+#content .info1 {
+	border:1px solid #666;
+	background:#f0f1f4;
+	color:#666;
+}
+
+#content .info2 {
+	border:1px solid #002b44;
+	background:#e7f7ff;
+	color:#002b44;
+}
+
+ul.list2 {color:#fefefe;}
+
+ul.list3 {color:#ff9c00;}
+
+form label {color:#a2a2a2;}
+
+/* ---------------------------------- Sidebar ----------------------------------------------*/
+
+#sidebar h1 {color:#ff9c00;}
+
+#sidebar p strong span {color:#5f461d;}
+
+#sidebar ul li a, #sidebar ul li a {color:#8e8879;}
+
+#middle #sidebar #recent-posts a, #middle #sidebar #popular-widget a {color:#feffff;}
+
+#searchform div label, #search div label {color:#ff9c00;}
+
+/* ---------------------------------- Footer ----------------------------------------------*/
+
+#footer {background:url(wood/footer_bg.png) bottom repeat-x;}
+
+#footer p {color:#8e8879;}
+
+#footer ul.menu_bot li a {color:#8e8879;}
+
+/* ---------------------------------- Other ----------------------------------------------*/
+
+a.button {
+	background:url(wood/but_bg.png) top left no-repeat;
+	color:#010001;
+}
+
+a.button:hover {
+	background:url(wood/but_sel.png) top left no-repeat;
+	color:#fefffe;
+}
+
+p.tags a {color:#ff9c00;}
+
+p.pp_description, p.pp_description {color:#14130f;}
+
+a.post-edit-link {color:#8e8879;}
+
+a.post-edit-link:hover {color:#fefeff;}
+
+a.website-name {color:#ff9c00;}
+
+#flickr a, #bottom #flickr a {color:#fefffe;}
+
+#bottom #flickr a:hover, #flickr a:hover {color:#f7a017;}
+
+ul.splitter {color:#feffff;}
+
+ul.splitter li ul {background:url(wood/sort_all.png) bottom center no-repeat;}
+
+.splitter li span {background:url(wood/sort_top.png) bottom center no-repeat;}
+
+.splitter ul li a {color:#1a3225;}
+
+.splitter ul li a:hover {color:#885526;}
+
+.splitter ul li.selected-0 a, 
+.splitter ul li.selected-1 a, 
+.splitter ul li.selected-2 a, 
+.splitter ul li.selected-3 a, 
+.splitter ul li.selected-4 a, 
+.splitter ul li.selected-5 a, 
+.splitter ul li.selected-6 a, 
+.splitter ul li.selected-7 a, 
+.splitter ul li.selected-8 a,
+.splitter ul li.selected-9 a {
+	background:url(wood/sort.png) bottom no-repeat;
+	color:#2a2826;
+}
+
+.splitter ul:hover li.selected-0 a,
+.splitter ul:hover li.selected-1 a,
+.splitter ul:hover li.selected-2 a,
+.splitter ul:hover li.selected-3 a,
+.splitter ul:hover li.selected-4 a,
+.splitter ul:hover li.selected-5 a,
+.splitter ul:hover li.selected-6 a,
+.splitter ul:hover li.selected-7 a,
+.splitter ul:hover li.selected-8 a,
+.splitter ul:hover li.selected-9 a {
+	background:url(wood/sort_sel.png) bottom no-repeat;
+	color:#feffff;
+}

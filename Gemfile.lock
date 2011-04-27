@@ -22,7 +22,7 @@ GEM
     haml (3.0.25)
     monkey-lib (0.5.4)
       backports
-    mysql (2.8.1)
+    mysql2 (0.2.7)
     nokogiri (1.4.4)
     rack (1.2.1)
     sinatra (1.1.2)
@@ -48,7 +48,7 @@ DEPENDENCIES
   dm-migrations
   dm-mysql-adapter
   haml
-  mysql
+  mysql2
   nokogiri
   sinatra
   sinatra-reloader
